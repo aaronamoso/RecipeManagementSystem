@@ -45,6 +45,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            btnLogin = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -200,11 +201,21 @@
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
             // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(973, 18);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(112, 34);
+            btnLogin.TabIndex = 17;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1107, 450);
+            Controls.Add(btnLogin);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -250,5 +261,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Button btnLogin;
     }
 }
