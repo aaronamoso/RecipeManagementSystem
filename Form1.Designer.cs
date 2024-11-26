@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            btnSpecial = new Button();
+            btnBreakfast = new Button();
+            btnLunch = new Button();
+            btnDinner = new Button();
+            btnSnacks = new Button();
+            btnDessert = new Button();
+            btnSeeAll = new Button();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            lblSeasonal = new Label();
+            lblTrending = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -50,68 +50,68 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnSpecial
             // 
-            button1.Location = new Point(67, 82);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnSpecial.Location = new Point(67, 82);
+            btnSpecial.Name = "btnSpecial";
+            btnSpecial.Size = new Size(112, 34);
+            btnSpecial.TabIndex = 0;
+            btnSpecial.Text = "Special";
+            btnSpecial.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBreakfast
             // 
-            button2.Location = new Point(222, 82);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnBreakfast.Location = new Point(222, 82);
+            btnBreakfast.Name = "btnBreakfast";
+            btnBreakfast.Size = new Size(112, 34);
+            btnBreakfast.TabIndex = 1;
+            btnBreakfast.Text = "Breakfast";
+            btnBreakfast.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnLunch
             // 
-            button3.Location = new Point(379, 82);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnLunch.Location = new Point(379, 82);
+            btnLunch.Name = "btnLunch";
+            btnLunch.Size = new Size(112, 34);
+            btnLunch.TabIndex = 2;
+            btnLunch.Text = "Lunch";
+            btnLunch.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnDinner
             // 
-            button4.Location = new Point(525, 82);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 34);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnDinner.Location = new Point(525, 82);
+            btnDinner.Name = "btnDinner";
+            btnDinner.Size = new Size(112, 34);
+            btnDinner.TabIndex = 3;
+            btnDinner.Text = "Dinner";
+            btnDinner.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnSnacks
             // 
-            button5.Location = new Point(678, 82);
-            button5.Name = "button5";
-            button5.Size = new Size(112, 34);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnSnacks.Location = new Point(678, 82);
+            btnSnacks.Name = "btnSnacks";
+            btnSnacks.Size = new Size(112, 34);
+            btnSnacks.TabIndex = 4;
+            btnSnacks.Text = "Snacks";
+            btnSnacks.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnDessert
             // 
-            button6.Location = new Point(823, 82);
-            button6.Name = "button6";
-            button6.Size = new Size(112, 34);
-            button6.TabIndex = 5;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            btnDessert.Location = new Point(823, 82);
+            btnDessert.Name = "btnDessert";
+            btnDessert.Size = new Size(112, 34);
+            btnDessert.TabIndex = 5;
+            btnDessert.Text = "Dessert";
+            btnDessert.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnSeeAll
             // 
-            button7.Location = new Point(973, 82);
-            button7.Name = "button7";
-            button7.Size = new Size(112, 34);
-            button7.TabIndex = 6;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
+            btnSeeAll.Location = new Point(973, 82);
+            btnSeeAll.Name = "btnSeeAll";
+            btnSeeAll.Size = new Size(112, 34);
+            btnSeeAll.TabIndex = 6;
+            btnSeeAll.Text = "See all";
+            btnSeeAll.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -122,32 +122,32 @@
             label1.TabIndex = 7;
             label1.Text = "Mealz";
             // 
-            // label2
+            // lblSeasonal
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(120, 162);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 25);
-            label2.TabIndex = 8;
-            label2.Text = "label2";
+            lblSeasonal.AutoSize = true;
+            lblSeasonal.Location = new Point(120, 162);
+            lblSeasonal.Name = "lblSeasonal";
+            lblSeasonal.Size = new Size(82, 25);
+            lblSeasonal.TabIndex = 8;
+            lblSeasonal.Text = "Seasonal";
             // 
-            // label3
+            // lblTrending
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(353, 162);
-            label3.Name = "label3";
-            label3.Size = new Size(59, 25);
-            label3.TabIndex = 9;
-            label3.Text = "label3";
+            lblTrending.AutoSize = true;
+            lblTrending.Location = new Point(353, 162);
+            lblTrending.Name = "lblTrending";
+            lblTrending.Size = new Size(80, 25);
+            lblTrending.TabIndex = 9;
+            lblTrending.Text = "Trending";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(598, 162);
             label4.Name = "label4";
-            label4.Size = new Size(59, 25);
+            label4.Size = new Size(133, 25);
             label4.TabIndex = 10;
-            label4.Text = "label4";
+            label4.Text = "Budget friendly";
             // 
             // label5
             // 
@@ -212,16 +212,16 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblTrending);
+            Controls.Add(lblSeasonal);
             Controls.Add(label1);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSeeAll);
+            Controls.Add(btnDessert);
+            Controls.Add(btnSnacks);
+            Controls.Add(btnDinner);
+            Controls.Add(btnLunch);
+            Controls.Add(btnBreakfast);
+            Controls.Add(btnSpecial);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -233,16 +233,16 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private Button btnSpecial;
+        private Button btnBreakfast;
+        private Button btnLunch;
+        private Button btnDinner;
+        private Button btnSnacks;
+        private Button btnDessert;
+        private Button btnSeeAll;
         private Label label1;
-        private Label label2;
-        private Label label3;
+        private Label lblSeasonal;
+        private Label lblTrending;
         private Label label4;
         private Label label5;
         private Label label6;
