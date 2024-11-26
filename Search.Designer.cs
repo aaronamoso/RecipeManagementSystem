@@ -53,6 +53,7 @@
             rbtnSummer = new RadioButton();
             rbtnSpring = new RadioButton();
             label5 = new Label();
+            btnReset = new Button();
             SuspendLayout();
             // 
             // label1
@@ -67,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(33, 318);
+            label2.Location = new Point(33, 261);
             label2.Name = "label2";
             label2.Size = new Size(96, 25);
             label2.TabIndex = 1;
@@ -75,9 +76,9 @@
             // 
             // lvRecipes
             // 
-            lvRecipes.Location = new Point(33, 382);
+            lvRecipes.Location = new Point(33, 304);
             lvRecipes.Name = "lvRecipes";
-            lvRecipes.Size = new Size(182, 146);
+            lvRecipes.Size = new Size(211, 258);
             lvRecipes.TabIndex = 2;
             lvRecipes.UseCompatibleStateImageBehavior = false;
             // 
@@ -237,7 +238,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(520, 566);
+            btnSearch.Location = new Point(374, 528);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(112, 34);
             btnSearch.TabIndex = 17;
@@ -276,7 +277,7 @@
             // rbtnWinter
             // 
             rbtnWinter.AutoSize = true;
-            rbtnWinter.Location = new Point(387, 400);
+            rbtnWinter.Location = new Point(379, 391);
             rbtnWinter.Name = "rbtnWinter";
             rbtnWinter.Size = new Size(89, 29);
             rbtnWinter.TabIndex = 21;
@@ -287,7 +288,7 @@
             // rbtnSummer
             // 
             rbtnSummer.AutoSize = true;
-            rbtnSummer.Location = new Point(602, 337);
+            rbtnSummer.Location = new Point(509, 336);
             rbtnSummer.Name = "rbtnSummer";
             rbtnSummer.Size = new Size(104, 29);
             rbtnSummer.TabIndex = 22;
@@ -298,7 +299,7 @@
             // rbtnSpring
             // 
             rbtnSpring.AutoSize = true;
-            rbtnSpring.Location = new Point(598, 391);
+            rbtnSpring.Location = new Point(509, 391);
             rbtnSpring.Name = "rbtnSpring";
             rbtnSpring.Size = new Size(89, 29);
             rbtnSpring.TabIndex = 23;
@@ -315,11 +316,21 @@
             label5.TabIndex = 24;
             label5.Text = "Recipes by season:";
             // 
+            // btnReset
+            // 
+            btnReset.Location = new Point(520, 528);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(112, 34);
+            btnReset.TabIndex = 25;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            // 
             // Search
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 632);
+            ClientSize = new Size(800, 601);
+            Controls.Add(btnReset);
             Controls.Add(label5);
             Controls.Add(rbtnSpring);
             Controls.Add(rbtnSummer);
@@ -378,5 +389,6 @@
         private RadioButton rbtnSummer;
         private RadioButton rbtnSpring;
         private Label label5;
+        private Button btnReset;
     }
 }
