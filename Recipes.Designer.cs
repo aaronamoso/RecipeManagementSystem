@@ -47,17 +47,18 @@
             // lblRecipeName
             // 
             lblRecipeName.AutoSize = true;
+            lblRecipeName.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblRecipeName.Location = new Point(66, 45);
             lblRecipeName.Name = "lblRecipeName";
-            lblRecipeName.Size = new Size(112, 25);
+            lblRecipeName.Size = new Size(121, 25);
             lblRecipeName.TabIndex = 0;
             lblRecipeName.Text = "Recipe name";
             // 
             // pbRecipe
             // 
-            pbRecipe.Location = new Point(245, 23);
+            pbRecipe.Location = new Point(268, 23);
             pbRecipe.Name = "pbRecipe";
-            pbRecipe.Size = new Size(240, 100);
+            pbRecipe.Size = new Size(187, 86);
             pbRecipe.TabIndex = 1;
             pbRecipe.TabStop = false;
             // 
@@ -73,16 +74,17 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(32, 141);
             label3.Name = "label3";
-            label3.Size = new Size(120, 25);
+            label3.Size = new Size(129, 25);
             label3.TabIndex = 3;
             label3.Text = "Time to cook:";
             // 
             // lblCookingTime
             // 
             lblCookingTime.AutoSize = true;
-            lblCookingTime.Location = new Point(172, 141);
+            lblCookingTime.Location = new Point(189, 141);
             lblCookingTime.Name = "lblCookingTime";
             lblCookingTime.Size = new Size(116, 25);
             lblCookingTime.TabIndex = 4;
@@ -91,16 +93,17 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(430, 141);
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.Location = new Point(453, 141);
             label5.Name = "label5";
-            label5.Size = new Size(97, 25);
+            label5.Size = new Size(104, 25);
             label5.TabIndex = 5;
             label5.Text = "Prep time: ";
             // 
             // lblPrepTime
             // 
             lblPrepTime.AutoSize = true;
-            lblPrepTime.Location = new Point(533, 141);
+            lblPrepTime.Location = new Point(563, 141);
             lblPrepTime.Name = "lblPrepTime";
             lblPrepTime.Size = new Size(144, 25);
             lblPrepTime.TabIndex = 6;
@@ -109,16 +112,17 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label7.Location = new Point(32, 177);
             label7.Name = "label7";
-            label7.Size = new Size(126, 25);
+            label7.Size = new Size(141, 25);
             label7.TabIndex = 7;
             label7.Text = "Difficulty level:";
             // 
             // lblDifficulty
             // 
             lblDifficulty.AutoSize = true;
-            lblDifficulty.Location = new Point(164, 177);
+            lblDifficulty.Location = new Point(189, 177);
             lblDifficulty.Name = "lblDifficulty";
             lblDifficulty.Size = new Size(243, 25);
             lblDifficulty.TabIndex = 8;
@@ -127,16 +131,17 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(430, 177);
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label9.Location = new Point(453, 177);
             label9.Name = "label9";
-            label9.Size = new Size(78, 25);
+            label9.Size = new Size(84, 25);
             label9.TabIndex = 9;
             label9.Text = "Calories:";
             // 
             // lblCalories
             // 
             lblCalories.AutoSize = true;
-            lblCalories.Location = new Point(533, 177);
+            lblCalories.Location = new Point(564, 177);
             lblCalories.Name = "lblCalories";
             lblCalories.Size = new Size(113, 25);
             lblCalories.TabIndex = 10;
