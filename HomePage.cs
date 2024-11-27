@@ -13,5 +13,14 @@ namespace RecipeManagementSystem
         {
             InitializeComponent();
         }
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            //Navigate the user to the login form
+            Login loginForm = new Login();
+            loginForm.Show();
+
+            //Hide the home page
+            this.Hide();
+        }
     }
 }

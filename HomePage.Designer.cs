@@ -209,8 +209,9 @@
             btnLogin.TabIndex = 17;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += this.btnLogin_Click;
             // 
-            // Form1
+            // HomePage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -233,7 +234,7 @@
             Controls.Add(btnLunch);
             Controls.Add(btnBreakfast);
             Controls.Add(btnSpecial);
-            Name = "Form1";
+            Name = "HomePage";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
