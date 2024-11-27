@@ -12,7 +12,7 @@ namespace RecipeManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //Example users, this should be replaced with a secure storage in a real app
+            //Passwords just for an example, this should be replaced with a secure storage in a real app
             var users = new Dictionary<string, string>
             {
                 { "user1", "password123" },
@@ -22,8 +22,14 @@ namespace RecipeManagementSystem
             string password = txtPassword.Text;
             if (users.TryGetValue(username, out string storedPassword) && storedPassword == password)
             {
-                MessageBox.Show("Login successful! Welcome " + username + ".");
-                //Add code to go to the main application window (form 1)
+                MessageBox.Show("Login successful! Welcome " + username + "!");
+
+                //Navigate the user to the home page of Mealz recipe management system
+                HomePage homePage = new HomePage();
+                homePage.Show();
+
+                //Close the login form 
+                this.Close();
             }
             else
             {
