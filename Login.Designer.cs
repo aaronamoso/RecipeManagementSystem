@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             label1 = new Label();
             label2 = new Label();
             btnSubmit = new Button();
@@ -40,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(120, 333);
+            label1.Location = new Point(120, 353);
             label1.Name = "label1";
             label1.Size = new Size(95, 25);
             label1.TabIndex = 0;
@@ -49,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(120, 398);
+            label2.Location = new Point(124, 425);
             label2.Name = "label2";
             label2.Size = new Size(91, 25);
             label2.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(209, 480);
+            btnSubmit.Location = new Point(231, 493);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(112, 34);
             btnSubmit.TabIndex = 2;
@@ -66,23 +67,25 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(231, 333);
+            txtUsername.Location = new Point(231, 353);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(231, 31);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(231, 398);
+            txtPassword.Location = new Point(231, 422);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(231, 31);
             txtPassword.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(189, 46);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(142, 41);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(219, 227);
+            pictureBox1.Size = new Size(288, 267);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
