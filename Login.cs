@@ -24,9 +24,9 @@ namespace RecipeManagementSystem
             {
                 MessageBox.Show("Login successful! Welcome " + username + "!");
 
-                //Navigate the user to the home page of Mealz recipe management system
-                HomePage homePage = new HomePage();
-                homePage.Show();
+                //Navigate the user to their user dashboard in the Mealz recipe management system
+                UserDashboard userDashboard = new UserDashboard();
+                userDashboard.Show();
 
                 //Close the login form 
                 this.Close();
