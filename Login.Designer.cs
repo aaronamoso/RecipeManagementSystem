@@ -41,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(120, 353);
+            label1.Location = new Point(102, 353);
             label1.Name = "label1";
             label1.Size = new Size(95, 25);
             label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(124, 425);
+            label2.Location = new Point(102, 412);
             label2.Name = "label2";
             label2.Size = new Size(91, 25);
             label2.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(231, 493);
+            btnSubmit.Location = new Point(203, 480);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(112, 34);
             btnSubmit.TabIndex = 2;
@@ -67,22 +67,23 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(231, 353);
+            txtUsername.Location = new Point(214, 350);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(231, 31);
+            txtUsername.Size = new Size(182, 31);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(231, 422);
+            txtPassword.Location = new Point(214, 409);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(231, 31);
+            txtPassword.Size = new Size(182, 31);
             txtPassword.TabIndex = 4;
             // 
             // pictureBox1
             // 
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(142, 41);
+            pictureBox1.Location = new Point(108, 43);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(288, 267);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -93,7 +94,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(578, 630);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(534, 560);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
