@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace RecipeManagementSystem
@@ -8,6 +9,28 @@ namespace RecipeManagementSystem
         public Login()
         {
             InitializeComponent();
+
+            // Add event handlers for KeyDown event
+            txtUsername.KeyDown += TxtUsername_KeyDown;
+            txtPassword.KeyDown += TxtPassword_KeyDown;
+        }
+
+        private void TxtUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Check if the Enter key is pressed
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSubmit.PerformClick(); // Trigger the click event of the Submit button
+            }
+        }
+
+        private void TxtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Check if the Enter key is pressed
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSubmit.PerformClick(); // Trigger the click event of the Submit button
+            }
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
