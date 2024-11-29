@@ -163,6 +163,7 @@
             btnLogout.TabIndex = 12;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // UserDashboard
             // 
