@@ -53,63 +53,70 @@
             // 
             // btnSpecial
             // 
-            btnSpecial.Location = new Point(67, 82);
+            btnSpecial.Location = new Point(47, 49);
+            btnSpecial.Margin = new Padding(2);
             btnSpecial.Name = "btnSpecial";
-            btnSpecial.Size = new Size(112, 34);
+            btnSpecial.Size = new Size(78, 20);
             btnSpecial.TabIndex = 0;
             btnSpecial.Text = "Special";
             btnSpecial.UseVisualStyleBackColor = true;
             // 
             // btnBreakfast
             // 
-            btnBreakfast.Location = new Point(222, 82);
+            btnBreakfast.Location = new Point(155, 49);
+            btnBreakfast.Margin = new Padding(2);
             btnBreakfast.Name = "btnBreakfast";
-            btnBreakfast.Size = new Size(112, 34);
+            btnBreakfast.Size = new Size(78, 20);
             btnBreakfast.TabIndex = 1;
             btnBreakfast.Text = "Breakfast";
             btnBreakfast.UseVisualStyleBackColor = true;
             // 
             // btnLunch
             // 
-            btnLunch.Location = new Point(379, 82);
+            btnLunch.Location = new Point(265, 49);
+            btnLunch.Margin = new Padding(2);
             btnLunch.Name = "btnLunch";
-            btnLunch.Size = new Size(112, 34);
+            btnLunch.Size = new Size(78, 20);
             btnLunch.TabIndex = 2;
             btnLunch.Text = "Lunch";
             btnLunch.UseVisualStyleBackColor = true;
             // 
             // btnDinner
             // 
-            btnDinner.Location = new Point(525, 82);
+            btnDinner.Location = new Point(368, 49);
+            btnDinner.Margin = new Padding(2);
             btnDinner.Name = "btnDinner";
-            btnDinner.Size = new Size(112, 34);
+            btnDinner.Size = new Size(78, 20);
             btnDinner.TabIndex = 3;
             btnDinner.Text = "Dinner";
             btnDinner.UseVisualStyleBackColor = true;
             // 
             // btnSnacks
             // 
-            btnSnacks.Location = new Point(678, 82);
+            btnSnacks.Location = new Point(475, 49);
+            btnSnacks.Margin = new Padding(2);
             btnSnacks.Name = "btnSnacks";
-            btnSnacks.Size = new Size(112, 34);
+            btnSnacks.Size = new Size(78, 20);
             btnSnacks.TabIndex = 4;
             btnSnacks.Text = "Snacks";
             btnSnacks.UseVisualStyleBackColor = true;
             // 
             // btnDessert
             // 
-            btnDessert.Location = new Point(823, 82);
+            btnDessert.Location = new Point(576, 49);
+            btnDessert.Margin = new Padding(2);
             btnDessert.Name = "btnDessert";
-            btnDessert.Size = new Size(112, 34);
+            btnDessert.Size = new Size(78, 20);
             btnDessert.TabIndex = 5;
             btnDessert.Text = "Dessert";
             btnDessert.UseVisualStyleBackColor = true;
             // 
             // btnSeeAll
             // 
-            btnSeeAll.Location = new Point(973, 82);
+            btnSeeAll.Location = new Point(681, 49);
+            btnSeeAll.Margin = new Padding(2);
             btnSeeAll.Name = "btnSeeAll";
-            btnSeeAll.Size = new Size(112, 34);
+            btnSeeAll.Size = new Size(78, 20);
             btnSeeAll.TabIndex = 6;
             btnSeeAll.Text = "See all";
             btnSeeAll.UseVisualStyleBackColor = true;
@@ -117,105 +124,116 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 18);
+            label1.Location = new Point(22, 11);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(58, 25);
+            label1.Size = new Size(38, 15);
             label1.TabIndex = 7;
             label1.Text = "Mealz";
             // 
             // lblSeasonal
             // 
             lblSeasonal.AutoSize = true;
-            lblSeasonal.Location = new Point(120, 162);
+            lblSeasonal.Location = new Point(84, 97);
+            lblSeasonal.Margin = new Padding(2, 0, 2, 0);
             lblSeasonal.Name = "lblSeasonal";
-            lblSeasonal.Size = new Size(82, 25);
+            lblSeasonal.Size = new Size(53, 15);
             lblSeasonal.TabIndex = 8;
             lblSeasonal.Text = "Seasonal";
             // 
             // lblTrending
             // 
             lblTrending.AutoSize = true;
-            lblTrending.Location = new Point(353, 162);
+            lblTrending.Location = new Point(247, 97);
+            lblTrending.Margin = new Padding(2, 0, 2, 0);
             lblTrending.Name = "lblTrending";
-            lblTrending.Size = new Size(80, 25);
+            lblTrending.Size = new Size(53, 15);
             lblTrending.TabIndex = 9;
             lblTrending.Text = "Trending";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(598, 162);
+            label4.Location = new Point(419, 97);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(133, 25);
+            label4.Size = new Size(88, 15);
             label4.TabIndex = 10;
             label4.Text = "Budget friendly";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(120, 332);
+            label5.Location = new Point(84, 306);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(59, 25);
+            label5.Size = new Size(38, 15);
             label5.TabIndex = 11;
             label5.Text = "label5";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(353, 332);
+            label6.Location = new Point(247, 306);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(59, 25);
+            label6.Size = new Size(38, 15);
             label6.TabIndex = 12;
             label6.Text = "label6";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(598, 332);
+            label7.Location = new Point(419, 306);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(59, 25);
+            label7.Size = new Size(38, 15);
             label7.TabIndex = 13;
             label7.Text = "label7";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(120, 208);
+            pictureBox1.Location = new Point(84, 125);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 75);
+            pictureBox1.Size = new Size(169, 179);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(353, 208);
+            pictureBox2.Location = new Point(247, 125);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(150, 75);
+            pictureBox2.Size = new Size(169, 179);
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(598, 208);
+            pictureBox3.Location = new Point(419, 125);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(150, 75);
+            pictureBox3.Size = new Size(169, 179);
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(973, 18);
+            btnLogin.Location = new Point(681, 11);
+            btnLogin.Margin = new Padding(2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(112, 34);
+            btnLogin.Size = new Size(78, 20);
             btnLogin.TabIndex = 17;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += this.btnLogin_Click;
+            btnLogin.Click += btnLogin_Click;
             // 
             // HomePage
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1107, 450);
+            ClientSize = new Size(775, 480);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -234,6 +252,7 @@
             Controls.Add(btnLunch);
             Controls.Add(btnBreakfast);
             Controls.Add(btnSpecial);
+            Margin = new Padding(2);
             Name = "HomePage";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
