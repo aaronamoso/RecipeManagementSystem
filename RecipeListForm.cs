@@ -1,4 +1,10 @@
-﻿public partial class RecipeListForm : Form
+﻿using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Linq;
+
+
+public partial class RecipeListForm : Form
 {
     private ListBox listBoxRecipes;
 
@@ -21,12 +27,10 @@
         this.Text = "Recipe List"; 
     }
 
-    private void LoadRecipes(string category)
+    private async void LoadRecipes(string category)
     {
-        // Replace with actual recipe fetching logic
-        List<string> recipes = GetRecipesForCategory(category);
+        var recipes = await GetRecipesForCategoryAsync(category);
 
-        // Display the recipes in the ListBox
         listBoxRecipes.Items.Clear();
         foreach (var recipe in recipes)
         {
@@ -34,19 +38,49 @@
         }
     }
 
-    private List<string> GetRecipesForCategory(string category)
+    private async Task<List<string>> GetRecipesForCategoryAsync(string category)
     {
-        // Sample data, replace with actual recipe fetching logic
-        Dictionary<string, List<string>> recipes = new Dictionary<string, List<string>>
+        if (category == "All")
         {
-            { "Special", new List<string> { "Special Recipe 1", "Special Recipe 2" } },
-            { "Breakfast", new List<string> { "Pancakes", "Omelette" } },
-            { "Lunch", new List<string> { "Sandwich", "Salad" } },
-            { "Dinner", new List<string> { "Spaghetti", "Steak" } },
-            { "Snacks", new List<string> { "Chips", "Fruit Salad" } },
-            { "Dessert", new List<string> { "Ice Cream", "Cake" } }
-        };
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    string apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+                    response.EnsureSuccessStatusCode();
 
-        return recipes.ContainsKey(category) ? recipes[category] : new List<string>();
+                    string responseBody = await response.Content.ReadAsStringAsync();
+
+                    dynamic data = JsonConvert.DeserializeObject(responseBody);
+
+                    var meals = ((IEnumerable<dynamic>)data.meals)
+                        .Take(20)
+                        .Select(meal => (string)meal.strMeal)
+                        .ToList();
+
+                    return meals;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Failed to fetch recipes: " + ex.Message);
+                    return new List<string> { "Error fetching recipes" };
+                }
+            }
+        }
+
+        // Fallback to local data for other categories
+        Dictionary<string, List<string>> recipeDictionary = new Dictionary<string, List<string>>
+    {
+        { "Special", new List<string> { "Sushi", "Charcuterie" } },
+        { "Breakfast", new List<string> { "Pancakes", "Omelette" } },
+        { "Lunch", new List<string> { "Sandwich", "Salad" } },
+        { "Dinner", new List<string> { "Spaghetti", "Steak" } },
+        { "Snacks", new List<string> { "Chips", "Fruit Salad" } },
+        { "Dessert", new List<string> { "Ice Cream", "Cake" } }
+    };
+
+        return recipeDictionary.ContainsKey(category) ? recipeDictionary[category] : new List<string>();
     }
+
 }
