@@ -1,12 +1,12 @@
-PRINT N'Creating Recipes...';
+PRINT N'Creating Directory...';
 GO
-CREATE SCHEMA [Recipes]
+CREATE SCHEMA [Directory]
 		AUTHORIZATION [dbo];
 GO
 
-PRINT N'Creating Recipes.Recipe...';
+PRINT N'Creating Directory.Recipe...';
 GO
-CREATE TABLE [Recipes].[Recipe] (
+CREATE TABLE [Directory].[Recipe] (
 		[RecipeID] INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
 		[RecipeName] NVARCHAR(40) NOT NULL,
 		[RecipeAuthor] NVARCHAR(40) NOT NULL,
@@ -23,17 +23,19 @@ CREATE TABLE [Recipes].[Recipe] (
 );
 GO
 
-PRINT N'Creating Recipes.Image...';
+PRINT N'Creating Directory.Image...';
 GO
-CREATE TABLE [Recipes].[Image] (
+CREATE TABLE [Directory].[Image] (
 		[ImageID] INT IDENTITY(1, 1) NOT NULL PRIMARY KEY, -- Add a unique identifier for images
 		[RecipeID] INT NOT NULL,
 		[RecipePhoto] VARBINARY(MAX) NOT NULL,
-		FOREIGN KEY ([RecipeID]) REFERENCES [Recipes].[Recipe]([RecipeID]) ON DELETE CASCADE
+		FOREIGN KEY ([RecipeID]) REFERENCES [Directory].[Recipe]([RecipeID]) ON DELETE CASCADE
 );
 GO
 
-INSERT INTO [Recipes].[Recipe] (
+
+
+INSERT INTO [Directory].[Recipe] (
 		[RecipeName],
 		[RecipeAuthor],
 		[Ingredients],
@@ -297,4 +299,4 @@ INSERT INTO [Recipes].[Recipe] (
 );
 
 
-SELECT * FROM [Recipes].[Recipe];
+SELECT * FROM [Directory].[Recipe];
