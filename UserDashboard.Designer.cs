@@ -181,7 +181,7 @@
             btnLogout.BackColor = Color.SteelBlue;
             btnLogout.Font = new Font("Cooper Black", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnLogout.ForeColor = Color.AliceBlue;
-            btnLogout.Location = new Point(637, 499);
+            btnLogout.Location = new Point(658, 488);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(153, 63);
             btnLogout.TabIndex = 12;
@@ -193,6 +193,9 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.AliceBlue;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(896, 611);
             Controls.Add(btnLogout);
             Controls.Add(btnViewAllRecipes);
