@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             label1 = new Label();
             label2 = new Label();
             lvRecipes = new ListView();
@@ -82,7 +83,7 @@
             // 
             lvRecipes.Location = new Point(33, 304);
             lvRecipes.Name = "lvRecipes";
-            lvRecipes.Size = new Size(211, 258);
+            lvRecipes.Size = new Size(283, 251);
             lvRecipes.TabIndex = 2;
             lvRecipes.UseCompatibleStateImageBehavior = false;
             // 
@@ -381,7 +382,9 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(969, 601);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(918, 586);
             Controls.Add(btnReset);
             Controls.Add(label5);
             Controls.Add(rbtnSpring);
@@ -408,6 +411,7 @@
             Controls.Add(lvRecipes);
             Controls.Add(label2);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "Search";
             Text = "Search";
             ResumeLayout(false);
