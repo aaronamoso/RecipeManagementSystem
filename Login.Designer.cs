@@ -35,75 +35,109 @@
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             pictureBox1 = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
+            label1.AccessibleDescription = "Username label";
+            label1.AccessibleName = "Username";
             label1.AutoSize = true;
-            label1.Location = new Point(102, 353);
+            label1.BackColor = Color.Azure;
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("Cooper Black", 14F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.SteelBlue;
+            label1.Location = new Point(32, 361);
             label1.Name = "label1";
-            label1.Size = new Size(95, 25);
+            label1.Size = new Size(167, 34);
             label1.TabIndex = 0;
             label1.Text = "Username:";
             // 
             // label2
             // 
+            label2.AccessibleDescription = "Password label";
+            label2.AccessibleName = "Password";
             label2.AutoSize = true;
-            label2.Location = new Point(102, 412);
+            label2.BackColor = Color.Azure;
+            label2.Font = new Font("Cooper Black", 14F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.SteelBlue;
+            label2.Location = new Point(32, 419);
             label2.Name = "label2";
-            label2.Size = new Size(91, 25);
+            label2.Size = new Size(161, 32);
             label2.TabIndex = 1;
             label2.Text = "Password:";
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(203, 480);
+            btnSubmit.BackColor = Color.SteelBlue;
+            btnSubmit.Font = new Font("Cooper Black", 16F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnSubmit.ForeColor = Color.AliceBlue;
+            btnSubmit.Location = new Point(174, 501);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(112, 34);
+            btnSubmit.Size = new Size(173, 73);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(214, 350);
+            txtUsername.BackColor = Color.AliceBlue;
+            txtUsername.ForeColor = Color.SteelBlue;
+            txtUsername.Location = new Point(214, 364);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(182, 31);
+            txtUsername.Size = new Size(198, 31);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(214, 409);
+            txtPassword.BackColor = Color.AliceBlue;
+            txtPassword.Location = new Point(214, 420);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(182, 31);
+            txtPassword.Size = new Size(198, 31);
             txtPassword.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(108, 43);
+            pictureBox1.Location = new Point(108, 76);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(288, 267);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Cooper Black", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.SteelBlue;
+            label3.Location = new Point(12, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(187, 64);
+            label3.TabIndex = 6;
+            label3.Text = "Mealz";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(534, 560);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(535, 603);
+            Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(btnSubmit);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = Color.SteelBlue;
             Name = "Login";
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -119,5 +153,6 @@
         private TextBox txtUsername;
         private TextBox txtPassword;
         private PictureBox pictureBox1;
+        private Label label3;
     }
 }
