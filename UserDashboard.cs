@@ -39,9 +39,9 @@ namespace RecipeManagementSystem
 
             if (result == DialogResult.Yes)
             {              
-                this.Hide(); 
-                Login loginForm = new Login(); 
-                loginForm.Show();
+                this.Hide();
+                HomePage homePageForm = new HomePage();
+                homePageForm.Show();
             }
         }
 
