@@ -41,6 +41,7 @@
             lblCalories = new Label();
             lblIngredients = new Label();
             lblInstructions = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pbRecipe).BeginInit();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             lblRecipeName.AutoSize = true;
             lblRecipeName.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblRecipeName.ForeColor = Color.SteelBlue;
-            lblRecipeName.Location = new Point(66, 45);
+            lblRecipeName.Location = new Point(32, 121);
             lblRecipeName.Name = "lblRecipeName";
             lblRecipeName.Size = new Size(167, 27);
             lblRecipeName.TabIndex = 0;
@@ -57,7 +58,7 @@
             // 
             // pbRecipe
             // 
-            pbRecipe.Location = new Point(285, 58);
+            pbRecipe.Location = new Point(433, 59);
             pbRecipe.Name = "pbRecipe";
             pbRecipe.Size = new Size(340, 192);
             pbRecipe.TabIndex = 1;
@@ -68,7 +69,7 @@
             lblRecipeAuthor.AutoSize = true;
             lblRecipeAuthor.Font = new Font("Elephant", 7.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblRecipeAuthor.ForeColor = Color.LightSlateGray;
-            lblRecipeAuthor.Location = new Point(86, 88);
+            lblRecipeAuthor.Location = new Point(66, 191);
             lblRecipeAuthor.Name = "lblRecipeAuthor";
             lblRecipeAuthor.Size = new Size(121, 21);
             lblRecipeAuthor.TabIndex = 2;
@@ -184,11 +185,23 @@
             lblInstructions.TabIndex = 12;
             lblInstructions.Text = "Instructions:";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Cooper Black", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.SteelBlue;
+            label1.Location = new Point(12, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(187, 64);
+            label1.TabIndex = 13;
+            label1.Text = "Mealz";
+            // 
             // Recipes
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(946, 648);
+            Controls.Add(label1);
             Controls.Add(lblInstructions);
             Controls.Add(lblIngredients);
             Controls.Add(lblCalories);
@@ -224,5 +237,6 @@
         private Label lblCalories;
         private Label lblIngredients;
         private Label lblInstructions;
+        private Label label1;
     }
 }
