@@ -39,139 +39,158 @@
             lblDifficulty = new Label();
             label9 = new Label();
             lblCalories = new Label();
-            label1 = new Label();
-            label2 = new Label();
+            lblIngredients = new Label();
+            lblInstructions = new Label();
             ((System.ComponentModel.ISupportInitialize)pbRecipe).BeginInit();
             SuspendLayout();
             // 
             // lblRecipeName
             // 
             lblRecipeName.AutoSize = true;
-            lblRecipeName.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblRecipeName.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRecipeName.ForeColor = Color.SteelBlue;
             lblRecipeName.Location = new Point(66, 45);
             lblRecipeName.Name = "lblRecipeName";
-            lblRecipeName.Size = new Size(121, 25);
+            lblRecipeName.Size = new Size(167, 27);
             lblRecipeName.TabIndex = 0;
             lblRecipeName.Text = "Recipe name";
             // 
             // pbRecipe
             // 
-            pbRecipe.Location = new Point(268, 23);
+            pbRecipe.Location = new Point(285, 58);
             pbRecipe.Name = "pbRecipe";
-            pbRecipe.Size = new Size(187, 86);
+            pbRecipe.Size = new Size(340, 192);
             pbRecipe.TabIndex = 1;
             pbRecipe.TabStop = false;
             // 
             // lblRecipeAuthor
             // 
             lblRecipeAuthor.AutoSize = true;
-            lblRecipeAuthor.Location = new Point(66, 84);
+            lblRecipeAuthor.Font = new Font("Elephant", 7.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRecipeAuthor.ForeColor = Color.LightSlateGray;
+            lblRecipeAuthor.Location = new Point(86, 88);
             lblRecipeAuthor.Name = "lblRecipeAuthor";
-            lblRecipeAuthor.Size = new Size(120, 25);
+            lblRecipeAuthor.Size = new Size(121, 21);
             lblRecipeAuthor.TabIndex = 2;
             lblRecipeAuthor.Text = "Recipe author";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(32, 141);
+            label3.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.SteelBlue;
+            label3.Location = new Point(36, 306);
             label3.Name = "label3";
-            label3.Size = new Size(129, 25);
+            label3.Size = new Size(146, 26);
             label3.TabIndex = 3;
             label3.Text = "Time to cook:";
             // 
             // lblCookingTime
             // 
             lblCookingTime.AutoSize = true;
-            lblCookingTime.Location = new Point(189, 141);
+            lblCookingTime.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCookingTime.ForeColor = Color.LightSlateGray;
+            lblCookingTime.Location = new Point(207, 306);
             lblCookingTime.Name = "lblCookingTime";
-            lblCookingTime.Size = new Size(116, 25);
+            lblCookingTime.Size = new Size(172, 26);
             lblCookingTime.TabIndex = 4;
-            lblCookingTime.Text = "cooking time";
+            lblCookingTime.Text = "placeholder text";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.Location = new Point(453, 141);
+            label5.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.SteelBlue;
+            label5.Location = new Point(513, 306);
             label5.Name = "label5";
-            label5.Size = new Size(104, 25);
+            label5.Size = new Size(122, 26);
             label5.TabIndex = 5;
             label5.Text = "Prep time: ";
             // 
             // lblPrepTime
             // 
             lblPrepTime.AutoSize = true;
-            lblPrepTime.Location = new Point(563, 141);
+            lblPrepTime.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPrepTime.ForeColor = Color.LightSlateGray;
+            lblPrepTime.Location = new Point(651, 306);
             lblPrepTime.Name = "lblPrepTime";
-            lblPrepTime.Size = new Size(144, 25);
+            lblPrepTime.Size = new Size(172, 26);
             lblPrepTime.TabIndex = 6;
-            lblPrepTime.Text = "preparation time";
+            lblPrepTime.Text = "placeholder text";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label7.Location = new Point(32, 177);
+            label7.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.SteelBlue;
+            label7.Location = new Point(36, 350);
             label7.Name = "label7";
-            label7.Size = new Size(141, 25);
+            label7.Size = new Size(165, 26);
             label7.TabIndex = 7;
             label7.Text = "Difficulty level:";
             // 
             // lblDifficulty
             // 
             lblDifficulty.AutoSize = true;
-            lblDifficulty.Location = new Point(189, 177);
+            lblDifficulty.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDifficulty.ForeColor = Color.LightSlateGray;
+            lblDifficulty.Location = new Point(207, 350);
             lblDifficulty.Name = "lblDifficulty";
-            lblDifficulty.Size = new Size(243, 25);
+            lblDifficulty.Size = new Size(172, 26);
             lblDifficulty.TabIndex = 8;
-            lblDifficulty.Text = "beginner, experienced, expert";
+            lblDifficulty.Text = "placeholder text";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label9.Location = new Point(453, 177);
+            label9.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.SteelBlue;
+            label9.Location = new Point(513, 350);
             label9.Name = "label9";
-            label9.Size = new Size(84, 25);
+            label9.Size = new Size(102, 26);
             label9.TabIndex = 9;
             label9.Text = "Calories:";
             // 
             // lblCalories
             // 
             lblCalories.AutoSize = true;
-            lblCalories.Location = new Point(564, 177);
+            lblCalories.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCalories.ForeColor = Color.LightSlateGray;
+            lblCalories.Location = new Point(651, 350);
             lblCalories.Name = "lblCalories";
-            lblCalories.Size = new Size(113, 25);
+            lblCalories.Size = new Size(172, 26);
             lblCalories.TabIndex = 10;
-            lblCalories.Text = "calorie count";
+            lblCalories.Text = "placeholder text";
             // 
-            // label1
+            // lblIngredients
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(66, 242);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 25);
-            label1.TabIndex = 11;
-            label1.Text = "Ingredients:";
+            lblIngredients.AutoSize = true;
+            lblIngredients.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblIngredients.ForeColor = Color.SteelBlue;
+            lblIngredients.Location = new Point(66, 413);
+            lblIngredients.Name = "lblIngredients";
+            lblIngredients.Size = new Size(135, 26);
+            lblIngredients.TabIndex = 11;
+            lblIngredients.Text = "Ingredients:";
             // 
-            // label2
+            // lblInstructions
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(377, 242);
-            label2.Name = "label2";
-            label2.Size = new Size(108, 25);
-            label2.TabIndex = 12;
-            label2.Text = "Instructions:";
+            lblInstructions.AutoSize = true;
+            lblInstructions.Font = new Font("Elephant", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblInstructions.ForeColor = Color.SteelBlue;
+            lblInstructions.Location = new Point(379, 413);
+            lblInstructions.Name = "lblInstructions";
+            lblInstructions.Size = new Size(143, 26);
+            lblInstructions.TabIndex = 12;
+            lblInstructions.Text = "Instructions:";
             // 
             // Recipes
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(946, 648);
+            Controls.Add(lblInstructions);
+            Controls.Add(lblIngredients);
             Controls.Add(lblCalories);
             Controls.Add(label9);
             Controls.Add(lblDifficulty);
@@ -203,7 +222,7 @@
         private Label lblDifficulty;
         private Label label9;
         private Label lblCalories;
-        private Label label1;
-        private Label label2;
+        private Label lblIngredients;
+        private Label lblInstructions;
     }
 }
