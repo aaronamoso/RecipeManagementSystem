@@ -12,7 +12,7 @@ namespace RecipeManagementSystem
 
         private void btnAdvancedSearch_Click(object sender, EventArgs e)
         {
-        
+
             foreach (Form form in Application.OpenForms)
             {
                 if (form is Search)
@@ -22,14 +22,14 @@ namespace RecipeManagementSystem
                 }
             }
 
-         
+
             Search searchForm = new Search();
             searchForm.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-        
+
             DialogResult result = MessageBox.Show(
                 "Are you sure you want to logout?",
                 "Logout",
@@ -38,12 +38,18 @@ namespace RecipeManagementSystem
             );
 
             if (result == DialogResult.Yes)
-            {              
+            {
                 this.Hide();
                 HomePage homePageForm = new HomePage();
                 homePageForm.Show();
             }
         }
 
-     }
+        private void btnViewAllRecipes_Click(object sender, EventArgs e)
+        {
+            AllRecipesList allRecipesListForm = new AllRecipesList(); 
+            allRecipesListForm.Show();
+        }
+    }
 }
+
