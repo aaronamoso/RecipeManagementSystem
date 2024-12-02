@@ -32,6 +32,7 @@ namespace RecipeManagementSystem
         {
 
         }
+
         private void btnSpecial_Click(object sender, EventArgs e)
         {
             OpenRecipeList("Special");

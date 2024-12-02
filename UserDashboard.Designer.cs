@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDashboard));
             label1 = new Label();
             label2 = new Label();
@@ -35,7 +36,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             btnAdvancedSearch = new Button();
-            textBox1 = new TextBox();
+            searchBar = new TextBox();
             btnSearch = new Button();
             label3 = new Label();
             label4 = new Label();
@@ -51,10 +52,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 26F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.SteelBlue;
-            label1.Location = new Point(28, 25);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(20, 15);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(163, 59);
+            label1.Size = new Size(110, 39);
             label1.TabIndex = 0;
             label1.Text = "Mealz";
             // 
@@ -63,10 +64,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.SteelBlue;
-            label2.Location = new Point(591, 86);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(414, 52);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(173, 29);
+            label2.Size = new Size(113, 20);
             label2.TabIndex = 1;
             label2.Text = "Saved recipes:";
             // 
@@ -74,20 +75,20 @@
             // 
             lbRecipes.BackColor = Color.AliceBlue;
             lbRecipes.FormattingEnabled = true;
-            lbRecipes.ItemHeight = 25;
-            lbRecipes.Location = new Point(612, 125);
-            lbRecipes.Margin = new Padding(2);
+            lbRecipes.ItemHeight = 15;
+            lbRecipes.Location = new Point(428, 75);
+            lbRecipes.Margin = new Padding(1, 1, 1, 1);
             lbRecipes.Name = "lbRecipes";
-            lbRecipes.Size = new Size(243, 329);
+            lbRecipes.Size = new Size(171, 199);
             lbRecipes.TabIndex = 2;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(89, 338);
-            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Location = new Point(62, 203);
+            pictureBox1.Margin = new Padding(1, 1, 1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(172, 214);
+            pictureBox1.Size = new Size(120, 128);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -95,10 +96,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(331, 338);
-            pictureBox2.Margin = new Padding(2);
+            pictureBox2.Location = new Point(232, 203);
+            pictureBox2.Margin = new Padding(1, 1, 1, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(182, 214);
+            pictureBox2.Size = new Size(127, 128);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -108,46 +109,48 @@
             btnAdvancedSearch.BackColor = Color.SteelBlue;
             btnAdvancedSearch.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnAdvancedSearch.ForeColor = Color.AliceBlue;
-            btnAdvancedSearch.Location = new Point(28, 168);
-            btnAdvancedSearch.Margin = new Padding(2);
+            btnAdvancedSearch.Location = new Point(20, 101);
+            btnAdvancedSearch.Margin = new Padding(1, 1, 1, 1);
             btnAdvancedSearch.Name = "btnAdvancedSearch";
-            btnAdvancedSearch.Size = new Size(301, 55);
+            btnAdvancedSearch.Size = new Size(211, 33);
             btnAdvancedSearch.TabIndex = 5;
             btnAdvancedSearch.Text = "More search options";
             btnAdvancedSearch.UseVisualStyleBackColor = false;
             btnAdvancedSearch.Click += btnAdvancedSearch_Click;
             // 
-            // textBox1
+            // searchBar
             // 
-            textBox1.BackColor = Color.AliceBlue;
-            textBox1.Location = new Point(89, 104);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(253, 31);
-            textBox1.TabIndex = 6;
+            searchBar.BackColor = Color.AliceBlue;
+            searchBar.Location = new Point(62, 62);
+            searchBar.Margin = new Padding(1, 1, 1, 1);
+            searchBar.Name = "searchBar";
+            searchBar.Size = new Size(178, 23);
+            searchBar.TabIndex = 6;
+            searchBar.TextChanged += searchBar_TextChanged;
             // 
             // btnSearch
             // 
             btnSearch.BackColor = Color.SteelBlue;
             btnSearch.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = Color.AliceBlue;
-            btnSearch.Location = new Point(348, 95);
-            btnSearch.Margin = new Padding(2);
+            btnSearch.Location = new Point(244, 57);
+            btnSearch.Margin = new Padding(1, 1, 1, 1);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(142, 46);
+            btnSearch.Size = new Size(99, 28);
             btnSearch.TabIndex = 7;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.SteelBlue;
-            label3.Location = new Point(40, 262);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(28, 157);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(212, 29);
+            label3.Size = new Size(138, 20);
             label3.TabIndex = 8;
             label3.Text = "New recipes to try:";
             // 
@@ -156,10 +159,10 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.LightSlateGray;
-            label4.Location = new Point(75, 308);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(52, 185);
+            label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(155, 25);
+            label4.Size = new Size(111, 17);
             label4.TabIndex = 9;
             label4.Text = "Chicken tortillas:";
             // 
@@ -168,10 +171,10 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 9.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.LightSlateGray;
-            label5.Location = new Point(321, 308);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(225, 185);
+            label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(154, 25);
+            label5.Size = new Size(109, 17);
             label5.TabIndex = 10;
             label5.Text = "Chocolate cake:";
             // 
@@ -180,10 +183,10 @@
             btnViewAllRecipes.BackColor = Color.SteelBlue;
             btnViewAllRecipes.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnViewAllRecipes.ForeColor = Color.AliceBlue;
-            btnViewAllRecipes.Location = new Point(348, 168);
-            btnViewAllRecipes.Margin = new Padding(2);
+            btnViewAllRecipes.Location = new Point(244, 101);
+            btnViewAllRecipes.Margin = new Padding(1, 1, 1, 1);
             btnViewAllRecipes.Name = "btnViewAllRecipes";
-            btnViewAllRecipes.Size = new Size(232, 55);
+            btnViewAllRecipes.Size = new Size(162, 33);
             btnViewAllRecipes.TabIndex = 11;
             btnViewAllRecipes.Text = "See all recipes";
             btnViewAllRecipes.UseVisualStyleBackColor = false;
@@ -194,10 +197,10 @@
             btnLogout.BackColor = Color.SteelBlue;
             btnLogout.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnLogout.ForeColor = Color.AliceBlue;
-            btnLogout.Location = new Point(658, 488);
-            btnLogout.Margin = new Padding(2);
+            btnLogout.Location = new Point(461, 293);
+            btnLogout.Margin = new Padding(1, 1, 1, 1);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(152, 62);
+            btnLogout.Size = new Size(106, 37);
             btnLogout.TabIndex = 12;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = false;
@@ -205,26 +208,26 @@
             // 
             // UserDashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(896, 611);
+            ClientSize = new Size(627, 367);
             Controls.Add(btnLogout);
             Controls.Add(btnViewAllRecipes);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(btnSearch);
-            Controls.Add(textBox1);
+            Controls.Add(searchBar);
             Controls.Add(btnAdvancedSearch);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(lbRecipes);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "UserDashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserDashboard";
@@ -242,7 +245,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button btnAdvancedSearch;
-        private TextBox textBox1;
+        private TextBox searchBar;
         private Button btnSearch;
         private Label label3;
         private Label label4;
