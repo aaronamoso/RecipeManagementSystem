@@ -23,8 +23,7 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -209,22 +208,21 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(723, 335);
+            pictureBox3.Location = new Point(713, 335);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(241, 298);
+            pictureBox3.Size = new Size(261, 298);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // btnLogin
             // 
             btnLogin.BackColor = Color.SteelBlue;
-            btnLogin.Font = new Font("Cooper Black", 16F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnLogin.Font = new Font("Cooper Black", 14F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.AliceBlue;
-            btnLogin.Location = new Point(1025, 41);
+            btnLogin.Location = new Point(1025, 30);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(195, 58);
+            btnLogin.Size = new Size(195, 57);
             btnLogin.TabIndex = 17;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
@@ -234,9 +232,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1252, 673);
+            ClientSize = new Size(1242, 684);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -252,7 +248,11 @@
             Controls.Add(btnLunch);
             Controls.Add(btnBreakfast);
             Controls.Add(btnSpecial);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "HomePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HomePage";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -278,36 +278,38 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button btnLogin;
+    }
 
-        // Button Click Handlers for HomePage
+    public partial class HomePage : Form
+    {
         private void btnSpecial_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Special");
+            OpenRecipeList("Special"); 
         }
 
         private void btnBreakfast_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Breakfast");
+            OpenRecipeList("Breakfast"); 
         }
 
         private void btnLunch_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Lunch");
+            OpenRecipeList("Lunch"); 
         }
 
         private void btnDinner_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Dinner");
+            OpenRecipeList("Dinner"); 
         }
 
         private void btnSnacks_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Snacks");
+            OpenRecipeList("Snacks"); 
         }
 
         private void btnDessert_Click(object sender, EventArgs e)
         {
-            OpenRecipeList("Dessert");
+            OpenRecipeList("Dessert"); 
         }
 
         private void btnSeeAll_Click(object sender, EventArgs e)
