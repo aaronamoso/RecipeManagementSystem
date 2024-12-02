@@ -14,7 +14,7 @@
     <Compile Update="RecipeListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Recipes.cs">
+    <Compile Update="RecipeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Search.cs">
