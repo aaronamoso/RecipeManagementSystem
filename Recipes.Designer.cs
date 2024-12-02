@@ -42,8 +42,8 @@
             lblIngredients = new Label();
             lblInstructions = new Label();
             label1 = new Label();
-            richTextBox1 = new RichTextBox();
-            richTextBox2 = new RichTextBox();
+            txtIngredients = new RichTextBox();
+            txtInstructions = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pbRecipe).BeginInit();
             SuspendLayout();
             // 
@@ -198,23 +198,23 @@
             label1.TabIndex = 13;
             label1.Text = "Mealz";
             // 
-            // richTextBox1
+            // txtIngredients
             // 
-            richTextBox1.BackColor = Color.AliceBlue;
-            richTextBox1.Location = new Point(38, 336);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(307, 284);
-            richTextBox1.TabIndex = 14;
-            richTextBox1.Text = "";
+            txtIngredients.BackColor = Color.AliceBlue;
+            txtIngredients.Location = new Point(38, 336);
+            txtIngredients.Name = "txtIngredients";
+            txtIngredients.Size = new Size(307, 284);
+            txtIngredients.TabIndex = 14;
+            txtIngredients.Text = "";
             // 
-            // richTextBox2
+            // txtInstructions
             // 
-            richTextBox2.BackColor = Color.AliceBlue;
-            richTextBox2.Location = new Point(382, 336);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(521, 284);
-            richTextBox2.TabIndex = 15;
-            richTextBox2.Text = "";
+            txtInstructions.BackColor = Color.AliceBlue;
+            txtInstructions.Location = new Point(382, 336);
+            txtInstructions.Name = "txtInstructions";
+            txtInstructions.Size = new Size(521, 284);
+            txtInstructions.TabIndex = 15;
+            txtInstructions.Text = "";
             // 
             // Recipes
             // 
@@ -222,8 +222,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(946, 648);
-            Controls.Add(richTextBox2);
-            Controls.Add(richTextBox1);
+            Controls.Add(txtInstructions);
+            Controls.Add(txtIngredients);
             Controls.Add(label1);
             Controls.Add(lblInstructions);
             Controls.Add(lblIngredients);
@@ -261,7 +261,7 @@
         private Label lblIngredients;
         private Label lblInstructions;
         private Label label1;
-        private RichTextBox richTextBox1;
-        private RichTextBox richTextBox2;
+        private RichTextBox txtIngredients;
+        private RichTextBox txtInstructions;
     }
 }
