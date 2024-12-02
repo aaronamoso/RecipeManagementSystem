@@ -21,10 +21,12 @@ namespace RecipeManagementSystem
         public string Season { get; set; }
         public string MealType { get; set; }
         public string Category { get; set; }
+        public string ImagePath { get; set; }
 
         public Recipe(string name, string author, string ingredients, string instructions,
                       int prepTime, int cookTime, string servings, int calories,
-                      string difficulty, string dietaryInfo, string season, string mealType, string category)
+                      string difficulty, string dietaryInfo, string season, string mealType, string category, string imagePath
+            )
         {
             Name = name;
             Author = author;
@@ -38,7 +40,8 @@ namespace RecipeManagementSystem
             DietaryInfo = dietaryInfo;
             Season = season;
             MealType = mealType;
-            Category = category; 
+            Category = category;
+            ImagePath = imagePath;
         }
     }
 }

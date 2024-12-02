@@ -44,7 +44,7 @@
             label1 = new Label();
             txtIngredients = new RichTextBox();
             txtInstructions = new RichTextBox();
-            button1 = new Button();
+            btnSave = new Button();
             ((System.ComponentModel.ISupportInitialize)pbRecipe).BeginInit();
             SuspendLayout();
             // 
@@ -217,25 +217,25 @@
             txtInstructions.TabIndex = 15;
             txtInstructions.Text = "";
             // 
-            // button1
+            // btnSave
             // 
-            button1.BackColor = Color.SteelBlue;
-            button1.Font = new Font("Elephant", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.AliceBlue;
-            button1.Location = new Point(723, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(158, 45);
-            button1.TabIndex = 16;
-            button1.Text = "Save recipe";
-            button1.UseVisualStyleBackColor = false;
+            btnSave.BackColor = Color.SteelBlue;
+            btnSave.Font = new Font("Elephant", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.ForeColor = Color.AliceBlue;
+            btnSave.Location = new Point(723, 28);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(158, 45);
+            btnSave.TabIndex = 16;
+            btnSave.Text = "Save recipe";
+            btnSave.UseVisualStyleBackColor = false;
             // 
-            // Recipes
+            // RecipeDetails
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(946, 648);
-            Controls.Add(button1);
+            Controls.Add(btnSave);
             Controls.Add(txtInstructions);
             Controls.Add(txtIngredients);
             Controls.Add(label1);
@@ -252,7 +252,7 @@
             Controls.Add(lblRecipeAuthor);
             Controls.Add(pbRecipe);
             Controls.Add(lblRecipeName);
-            Name = "Recipes";
+            Name = "RecipeDetails";
             Text = "Recipes";
             ((System.ComponentModel.ISupportInitialize)pbRecipe).EndInit();
             ResumeLayout(false);
@@ -277,6 +277,6 @@
         private Label label1;
         private RichTextBox txtIngredients;
         private RichTextBox txtInstructions;
-        private Button button1;
+        private Button btnSave;
     }
 }
