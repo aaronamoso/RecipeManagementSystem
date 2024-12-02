@@ -47,6 +47,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
+            // Button and control properties omitted for brevity.
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
             // 
             // btnSpecial
             // 
@@ -263,6 +269,7 @@
 
         #endregion
 
+    
         private Button btnSpecial;
         private Button btnBreakfast;
         private Button btnLunch;
@@ -278,49 +285,5 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button btnLogin;
-    }
-
-    public partial class HomePage : Form
-    {
-        private void btnSpecial_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Special"); 
-        }
-
-        private void btnBreakfast_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Breakfast"); 
-        }
-
-        private void btnLunch_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Lunch"); 
-        }
-
-        private void btnDinner_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Dinner"); 
-        }
-
-        private void btnSnacks_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Snacks"); 
-        }
-
-        private void btnDessert_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("Dessert"); 
-        }
-
-        private void btnSeeAll_Click(object sender, EventArgs e)
-        {
-            OpenRecipeList("All");
-        }
-
-        private void OpenRecipeList(string category)
-        {
-            RecipeListForm recipeListForm = new RecipeListForm(category);
-            recipeListForm.Show();
-        }
     }
 }
