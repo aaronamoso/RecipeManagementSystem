@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             label1 = new Label();
             label2 = new Label();
-            lvRecipes = new ListView();
             rbtnBreakfast = new RadioButton();
             rbtnLunch = new RadioButton();
             rbtnDinner = new RadioButton();
@@ -55,6 +54,7 @@
             rbtnSpring = new RadioButton();
             label5 = new Label();
             btnReset = new Button();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -78,14 +78,6 @@
             label2.Size = new Size(140, 25);
             label2.TabIndex = 1;
             label2.Text = "All recipes:";
-            // 
-            // lvRecipes
-            // 
-            lvRecipes.Location = new Point(33, 304);
-            lvRecipes.Name = "lvRecipes";
-            lvRecipes.Size = new Size(283, 251);
-            lvRecipes.TabIndex = 2;
-            lvRecipes.UseCompatibleStateImageBehavior = false;
             // 
             // rbtnBreakfast
             // 
@@ -378,6 +370,17 @@
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
             // 
+            // listBox1
+            // 
+            listBox1.BackColor = Color.AliceBlue;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 25;
+            listBox1.Items.AddRange(new object[] { "Banana-Choco Apples", "Charcuterie Board", "Cheesy Crab Panini", "Chicken Curry", "Deluxe Pita Pizzas", "Dessert Bars", "Pasta-To-Go Sandwich", "Savory Mashed Potatoes", "Spaghetti Bolognese", "Taco Salad" });
+            listBox1.Location = new Point(35, 301);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(289, 254);
+            listBox1.TabIndex = 26;
+            // 
             // Search
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -385,6 +388,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(918, 586);
+            Controls.Add(listBox1);
             Controls.Add(btnReset);
             Controls.Add(label5);
             Controls.Add(rbtnSpring);
@@ -408,7 +412,6 @@
             Controls.Add(rbtnDinner);
             Controls.Add(rbtnLunch);
             Controls.Add(rbtnBreakfast);
-            Controls.Add(lvRecipes);
             Controls.Add(label2);
             Controls.Add(label1);
             DoubleBuffered = true;
@@ -422,7 +425,6 @@
 
         private Label label1;
         private Label label2;
-        private ListView lvRecipes;
         private RadioButton rbtnBreakfast;
         private RadioButton rbtnLunch;
         private RadioButton rbtnDinner;
@@ -446,5 +448,6 @@
         private RadioButton rbtnSpring;
         private Label label5;
         private Button btnReset;
+        private ListBox listBox1;
     }
 }
