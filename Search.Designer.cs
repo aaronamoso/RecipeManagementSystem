@@ -272,6 +272,9 @@
             btnSearch.TabIndex = 17;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click; // added for search radiobutton
+           
+
             // 
             // label3
             // 
@@ -369,6 +372,7 @@
             btnReset.TabIndex = 25;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click; // added for reset radio button for search
             // 
             // listBox1
             // 
