@@ -49,6 +49,6 @@ public partial class RecipeListForm : Form
         }
 
         // Filter by category 
-        return allRecipes.Where(r => r.Category.Equals(category, StringComparison.OrdinalIgnoreCase)).ToList();
+        return allRecipes.Where(r => r.MealType.Equals(category, StringComparison.OrdinalIgnoreCase)).ToList();
     }
 }

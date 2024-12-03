@@ -29,7 +29,7 @@ namespace RecipeManagementSystem
                 "Charcuterie Board", "Duane L.",
                 "60 ml Gluten-free blue cheese, 60 ml gluten-free Brie cheese, 2 slices gluten-free baguette, 4 gluten-free crackers, 6 cashew nuts, 3 almonds, 8 raisins or dried cranberries, 2 sliced black olives, 2 sliced green olives, 4 slices of green apple - dipped in 15 ml of lemon juice to coat, 6 red grapes, 2 slices of Gluten-free Felino salami",
                 "1. Prepare all ingredients, slicing as necessary. 2. Arrange on a decorative plate or charcuterie board when ready to serve. 3. To make ahead, arrange on serving dish and cover tightly with plastic wrap and store in refrigerator up to 4 hours until ready to serve.",
-                0, 15, "1 serving", 500, "Easy", "Gluten-free", "Fall", "Snack", "Regular", "images/CharcuterieBoard.png"
+                0, 15, "1 serving", 500, "Easy", "Gluten-free", "Fall", "Snacks", "Regular", "images/CharcuterieBoard.png"
             ),
             new Recipe(
                 "Banana-Choco Apples", "Aaron A.",
@@ -65,7 +65,7 @@ namespace RecipeManagementSystem
                 "Dessert Bars", "Janine N.",
                 "375 ml crunchy peanut butter, 1/2 cup chopped peanuts, 1 egg, 175ml sugar, 1 cup chocolate chips for glaze",
                 "1. Combine all ingredients except chocolate chips and blend well. 2. Press into 20 x 20 cm pan that has been lined with tin foil. 3. Bake at 325F for 30 minutes. 4. Remove from oven and immediately sprinkle the chocolate chips on top. 5. Cover with tin foil and let set until chocolate chips are melted. 6. Spread chocolate chips evenly across top and let cool completely in refrigerator. 7. Cut into 16 pieces and serve.",
-                30, 5, "16 servings", 282, "Easy", "None", "Spring", "Breakfast", "Regular", "images/DessertBars.png"
+                30, 5, "16 servings", 282, "Easy", "None", "Spring", "Dessert", "Regular", "images/DessertBars.png"
             )
         };
     }
