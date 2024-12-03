@@ -64,30 +64,30 @@ namespace RecipeManagementSystem
                 lbRecipes.Items.Add(recipe.Name);
             }
         }
+
+        // ADD LOGIC HERE WHEN AN ITEM IS CLICKED WITHIN THE LISTBOX, SHOULD DIRECT TO RECIPE DETAILS
         private void lbRecipes_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Get the selected item
+ 
+     
+
             if (lbRecipes.SelectedItem != null)
             {
                 string selectedRecipeName = lbRecipes.SelectedItem.ToString();
-                Recipe selectedRecipe = RecipeData.Recipes.Find(r => r.Name == selectedRecipeName);
+                //Recipe selectedRecipe = RecipeData.Recipes.Find(r => r.Name == selectedRecipeName);
 
+                var selectedRecipe = RecipeData.Recipes.FirstOrDefault(r => r.Name == selectedRecipeName);
                 if (selectedRecipe != null)
-                {
-                    MessageBox.Show(
-                        $"Name: {selectedRecipe.Name}\n" +
-                        $"Author: {selectedRecipe.Author}\n" +
-                        $"Ingredients: {selectedRecipe.Ingredients}\n" +
-                        $"Instructions: {selectedRecipe.Instructions}\n" +
-                        $"Prep Time: {selectedRecipe.PrepTime} mins\n" +
-                        $"Cook Time: {selectedRecipe.CookTime} mins\n" +
-                        $"Servings: {selectedRecipe.Servings}\n" +
-                        $"Calories: {selectedRecipe.Calories}",
-                        "Recipe Details",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                }
+            {
+                // Open RecipeDetails form and pass the recipe data
+                RecipeDetails detailsForm = new RecipeDetails(selectedRecipe);
+                detailsForm.ShowDialog();
             }
+
+            }
+
+           
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
