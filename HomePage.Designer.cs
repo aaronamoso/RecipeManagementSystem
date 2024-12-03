@@ -47,12 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // Button and control properties omitted for brevity.
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
             // 
             // btnSpecial
             // 
@@ -238,6 +232,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.AliceBlue;
             ClientSize = new Size(1242, 684);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox3);
@@ -269,7 +264,7 @@
 
         #endregion
 
-    
+
         private Button btnSpecial;
         private Button btnBreakfast;
         private Button btnLunch;
